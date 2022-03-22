@@ -1,0 +1,20 @@
+#如何安装Chromdriver:
+https://www.cnblogs.com/conquerorren/p/9084047.html
+
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
+sudo mv -f chromedriver /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+下载：
+https://sites.google.com/a/chromium.org/chromedriver/
+
+
+Python3.5用pip3
+sudo python3.5 -m pip install aiohttp
+
+pip3 install apscheduler==3.6.3
+
+安装pip3
+sudo apt install python3-pip
+

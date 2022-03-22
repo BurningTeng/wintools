@@ -1,0 +1,426 @@
+<html><head>
+		<title>东软考勤系统</title>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="/css/tb_index_css-new.css">
+		<script language="javascript" src="/script/jquery-1.7.1.min.js"></script> 
+		<script language="javascript" src="/script/mootools-1.2-core.js"></script>	
+		<script language="javascript" src="/script/index-js.js"></script>
+		
+	<style>
+	
+
+	
+	input.a{
+	    font-size: 20px;
+	}
+	.jigsaw{
+	position: relative;
+    margin: auto;
+    font-size: 14px;
+    margin-left:185px;
+    height: 120px;
+    margin-top: -123px;
+	}
+	.jigimgB{
+	pointer-events: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+	.jigimgS{
+	pointer-events: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+	#logon .tbLogonPanel {
+    width: 470px;
+    }
+        .ui-slider-wrap {
+            background: #e8e8e8;
+            position: relative;
+        }
+
+        .ui-slider-wrap .ui-slider-bg {
+            width: 0;
+        }
+
+        .ui-slider-wrap .ui-slider-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: move;
+            text-align: center;
+            background: #d8e0f7 url(/upload/jigsawUtil/arrow.png?v=2) no-repeat center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .ui-slider-wrap .ui-slider-text {
+            width: 100%;
+            height: 100%;
+            font-family: "微软雅黑";
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #666;
+        }
+
+        .ui-slider-wrap .ui-slider-no-select {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .eleWrapperNew {
+             text-align: center;
+             margin: 5px 0;
+       }
+       .eleWrapperNew .userName{  
+            border: 1px solid #306EAC;
+            width: 246px;
+            padding: 8px 0 8px 32px;
+            font-size: 20px;
+            background: url(/upload/jigsawUtil/user.png?v=1) no-repeat #FFFFFF;
+            background-position: left;
+       }
+        .eleWrapperNew .password{  
+            border: 1px solid #306EAC;
+            width: 246px;
+            padding: 8px 0 8px 32px;
+            font-size: 20px;
+            background: url(/upload/jigsawUtil/lock.png?v=2) no-repeat  #FFFFFF;
+            background-position: left;
+       } 
+
+</style>
+		
+	</head>
+
+	<body>
+		<div id="logon">
+			<form action="/login.jsp" method="post" name="LoginForm">
+				<input type="hidden" name="login" value="true">
+				<div style="display:none; ">
+				<input type="text" name="neusoft_attendance_online">
+				<input type="text" name="KEY1647932010692">
+				<input type="hidden" name="neusoft_key" value="ID1647932010692PWD1647932010692">				
+				<input type="hidden" name="YZMWkpJv5yKplL2vLPG7hBJBxWqp16CJT1XQ0qDdFRsWDV57VJqnJTn!-1312877719!1647932010692" class="imageRandeCode" value="">				
+				</div>
+				<div id="tbLogonPanel" class="tbLogonPanel">
+					<div class="logonSubmit">
+						<div class="logonPanel">
+							<div class="submitButton">
+							</div>
+							<div>
+								<div class="brand eleWrapper" style="font-weight: bold;">东软考勤系统</div>
+								<div class="eleWrapperNew" title="请输入用户名"><input type="text" class="textfield userName" name="IDWkpJv5yKplL2vLPG7hBJBxWqp16CJT1XQ0qDdFRsWDV57VJqnJTn!-1312877719!1647932010692" id="nt1647932010692"></div>
+								<div class="eleWrapperNew" title="请输入密码"><input type="password" class="textfield password" name="KEYWkpJv5yKplL2vLPG7hBJBxWqp16CJT1XQ0qDdFRsWDV57VJqnJTn!-1312877719!1647932010692"></div>
+								<!-- <p></p> -->
+
+			    
+                                <div class="jigsaw" style="display:none;">
+                                <div class="jigimgB">
+                                <img src="/upload/jigsawImg/1951b185-22f6-49fa-b0ea-2ccca6e295d4.png" id="bigImage" onload="clearB()">                          
+                                </div>
+                                <div class="jigimgS" style="top: 15px; left: 0px;">
+                                <img src="/upload/jigsawImg/0c94ca83-51ea-418b-bdbe-e4b08a0cb986.png" id="smallImage" onload="clearS()">                   
+                                </div>
+                                </div>
+                                <div id="j_sliderVerify" class="slider" style="width:280px;height:40px;margin:5px 0 15px 185px;position: relative;"><div class="ui-slider-wrap" style="width: 280px; height: 40px; background-color: rgb(247, 249, 250);"><div class="ui-slider-text ui-slider-no-select" style="line-height: 40px; font-size: 14px; color: rgb(33, 124, 255);">按住滑块，向右拖动</div><div class="ui-slider-btn init ui-slider-no-select" style="width: 40px; height: 40px; line-height: 40px;"></div><div class="ui-slider-bg" style="height: 40px; background-color: rgb(209, 233, 254);"></div></div></div>
+								<p></p>
+								<div class="submitBar" title="点击登入系统" style="text-align: left; margin-left: 255px"><input type="submit" value="登入系统" id="loginButton"></div>
+								<div style="margin-top:-20px;text-align: left; margin-left: 370px"><a href="https://wxservice.neusoft.com/pwd/" target="_blank">忘记密码</a></div>
+							</div>			
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div id="tbException" class="tbException tbExceptionSmall">
+			<div class="exceptionBody">
+	  				<div class="exceptionContent">
+						
+					</div>
+				<input type="button" value="">
+			</div>
+		</div>
+
+		<div id="browserCompatibility" class="browserCompatibility" title="">
+			©2009-2010 Neusoft.  Powered by 慧鼎<sup>®</sup>  
+		</div>
+
+<script>
+document.getElementById("nt1647932010692").focus();
+var startDate = "";
+var endDate = "";
+var xWidth = "";
+//单击触发图片重载事件，完成图片验证码的更换 add by lantq 20180613
+function changeImage(){
+    document.getElementById("imgRandom").src = document.getElementById("imgRandom").src + '?';
+}
+
+jQuery(document).ready(function(){
+	getJigsaw();
+});
+function clearS(){
+ 	jQuery.ajax({
+		type: "post",
+		dataType: "json",//返回json格式的数据
+		url: "/jigsawVerify",
+		data:{	
+		    "type" : "0",
+		    "img" : "S"
+		},
+		async : true,
+		complete :function(){},//AJAX请求完成时隐藏loading提示
+		success: function(data){//data为返回的数据    			
+		}
+	});	
+}
+function clearB(){
+ 	jQuery.ajax({
+		type: "post",
+		dataType: "json",//返回json格式的数据
+		url: "/jigsawVerify",
+		data:{	
+		    "type" : "0",
+		    "img" : "B"
+		},
+		async : true,
+		complete :function(){},//AJAX请求完成时隐藏loading提示
+		success: function(data){//data为返回的数据   			
+		}
+	});	
+}
+
+
+function getJigsaw(){
+	jQuery.ajax({
+		type: "post",
+		dataType: "json",//返回json格式的数据
+		url: "/jigsaw",
+		async : true,
+		complete :function(){},//AJAX请求完成时隐藏loading提示
+		success: function(data){//data为返回的数据
+			var datas = eval(data);
+			jQuery(".imageRandeCode").val("");
+			document.getElementById("bigImage").src = "/upload/jigsawImg/"+datas.bigImage+".png";
+			document.getElementById("smallImage").src = "/upload/jigsawImg/"+datas.smallImage+".png";
+			jQuery(".jigimgS").css("top",datas.yHeight+"px");
+			jQuery(".jigimgS").css("left","0px");
+		}
+	});	
+}
+
+//插件代码
+(function(t, i, s, e) {
+    var l = function(i, s) {
+        this.ele = i;
+        this.defaults = {
+            width: 300,
+            height: 34,
+            sliderBg: "#e8e8e8",
+            color: "#666",
+            fontSize: 12,
+            bgColor: "#7ac23c",
+            textMsg: "请按住滑块，拖动到最右边",
+            successMsg: "验证成功",
+            successColor: "#fff",
+            time: 160,
+            callback: function(t) {}
+        };
+        this.opts = t.extend({}, this.defaults, s);
+        this.init()
+    };
+    l.prototype = {
+        init: function() {
+            this.result = false;
+            this.sliderBtn_left = 0;
+            this.maxLeft = this.opts.width - this.opts.height;
+            this.render();
+            this.eventBind()
+        },
+        render: function() {
+            var t = '<div class="ui-slider-wrap">' + '<div class="ui-slider-text ui-slider-no-select">' + this.opts.textMsg + "</div>" + '<div class="ui-slider-btn init ui-slider-no-select"></div>' + '<div class="ui-slider-bg"></div>' + "</div>";
+            this.ele.html(t);
+            this.initStatus()
+        },
+        initStatus: function() {
+            var t = this;
+            var i = this.ele;
+            this.slider = i.find(".ui-slider-wrap");
+            this.sliderBtn = i.find(".ui-slider-btn");
+            this.bgColor = i.find(".ui-slider-bg");
+            this.sliderText = i.find(".ui-slider-text");
+            this.slider.css({
+                width: t.opts.width,
+                height: t.opts.height,
+                backgroundColor: t.opts.sliderBg
+            });
+            this.sliderBtn.css({
+                width: t.opts.height,
+                height: t.opts.height,
+                lineHeight: t.opts.height + "px"
+            });
+            this.bgColor.css({
+                height: t.opts.height,
+                backgroundColor: t.opts.bgColor
+            });
+            this.sliderText.css({
+                lineHeight: t.opts.height + "px",
+                fontSize: t.opts.fontSize,
+                color: t.opts.color
+            })
+        },
+        restore: function() {
+            var t = this;
+            var i = t.opts.time;
+            this.result = false;
+            this.initStatus();
+            this.sliderBtn.removeClass("success").animate({
+                left: 0
+            }, i);
+            this.bgColor.animate({
+                width: 0
+            }, i, function() {
+                t.sliderText.text(t.opts.textMsg)
+            })
+        },
+        eventBind: function() {
+            var t = this;
+            this.ele.on("mousedown", ".ui-slider-btn", function(i) {
+                if (t.result) {
+                    return
+                }
+                t.sliderMousedown(i)
+            })
+        },
+        sliderMousedown: function(t) {
+            var i = this;
+            var s = t.clientX;
+            var e = s - this.sliderBtn.offset().left;
+            jQuery(".jigsaw").show();
+            startDate = new Date().getTime();
+            i.sliderMousemove(s, e);
+            i.sliderMouseup()
+        },
+        sliderMousemove: function(i, e) {      	
+            var l = this;
+            t(s).on("mousemove.slider", function(t) {
+                l.sliderBtn_left = t.clientX - i - e;
+                if (l.sliderBtn_left < 0) {
+                	return;
+                }       
+                if (l.sliderBtn_left > l.maxLeft) {
+                    l.sliderBtn_left = l.maxLeft
+                }
+                jQuery(".jigimgS").css("left",l.sliderBtn_left+"px");
+                l.sliderBtn.css("left", l.sliderBtn_left);
+                l.bgColor.width(l.sliderBtn_left)
+            })
+        },
+        sliderMouseup: function() {
+            var i = this;
+            t(s).on("mouseup.slider", function() {
+            	t(this).off("mousemove.slider mouseup.slider");
+            	xWidth = i.sliderBtn_left;
+             	jQuery.ajax({
+            		type: "post",
+            		dataType: "json",//返回json格式的数据
+            		url: "/jigsawVerify",
+            		data:{	
+            		    "xWidth" :i.sliderBtn_left,
+            		    "type" : "1"
+            		},
+            		async : true,
+            		complete :function(){},//AJAX请求完成时隐藏loading提示
+            		success: function(data){//data为返回的数据
+                    	if(data == "0"){
+                    		i.sliderBtn_left = 0;
+                            i.ele.find(".ui-slider-text").text("验证失败").css({
+                                "color": "#FF5447",
+                                "background-color":"#FCE1E1"
+                            });
+                            i.ele.find(".ui-slider-btn").hide();
+                            setTimeout(function(){
+                            	jQuery("#j_sliderVerify").slider("restore");
+                            	i.ele.find(".ui-slider-btn").show();
+                                i.ele.find(".ui-slider-text").css({
+                                    "background-color":"#D1E9FE"
+                                });
+                                getJigsaw();
+                            },500);
+                    	} else {
+                    		endDate = new Date().getTime();
+                    		var betDate = endDate - startDate;          		
+                    		var time = (betDate/1000).toFixed(1);
+                            i.ele.find(".ui-slider-text").text(i.opts.successMsg+",耗时"+time+"秒").css({
+                                "color": i.opts.successColor,
+                                "background-color":"#D2F4EF"
+                            });
+                            i.ele.find(".ui-slider-btn").hide();
+                            jQuery(".jigsaw").hide();
+                            i.result = true;                 
+                        }                     
+                        if (i.opts.callback && typeof i.opts.callback === "function") {
+                            i.opts.callback(i.result)
+                        }    			
+            		}
+            	});	        	
+
+            })
+        }
+    };
+    t.fn.slider = function(i) {
+        return this.each(function() {
+            var s = t(this);
+            var e = s.data("slider");
+            if (!e) {
+                e = new l(s, i);
+                s.data("slider", e)
+            }
+            if (typeof i === "string") {
+                e[i]()
+            }
+        })
+    }
+})(jQuery, window, document);
+//调用代码
+jQuery("#j_sliderVerify").slider({
+    width: 280, // width
+    height: 40, // height
+    sliderBg: "#F7F9FA", // 滑块背景颜色
+    color: "#217CFF", // 文字颜色
+    fontSize: 14, // 文字大小
+    bgColor: "#D1E9FE", // 背景颜色
+    textMsg: "按住滑块，向右拖动", // 提示文字
+    successMsg: "验证成功", // 验证成功提示文字
+    successColor: "#20C8AE", // 滑块验证成功提示文字颜色
+    time: 400, // 返回时间
+    callback: function(result) { // 回调函数，true(成功),false(失败)
+        if (result) {
+        	jQuery(".imageRandeCode").val(xWidth);
+        }else{
+            //失败代码
+        	jQuery(".imageRandeCode").val("");
+        }
+        // 还原
+        // jQuery("#j_sliderVerify").slider("restore");
+    }
+});
+
+</script>
+
+
+</body></html>
