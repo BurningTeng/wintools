@@ -107,16 +107,16 @@ def main():
         if success in verify_text.text:
             break
 
-    driver.find_element_by_class_name("userName").send_keys("gaoyunpeng")
-    driver.find_element_by_class_name("password").send_keys("779292199Xh")
+    driver.find_element_by_class_name("userName").send_keys("tengyb")
+    driver.find_element_by_class_name("password").send_keys("18345093167ASdgy123")
 
     driver.find_element_by_id("loginButton").click()
     with open('page2.html', 'w') as f:
         f.write(driver.page_source)
     time.sleep(0.5)
-    #driver.find_element_by_xpath('//a[@href="'+"javascript:document.attendanceForm.submit();"+'"]').click()
+    driver.find_element_by_xpath('//a[@href="'+"javascript:document.attendanceForm.submit();"+'"]').click()
     time.sleep(0.5)
-    #driver.find_element_by_xpath('//a[@href="'+"javascript:exitAttendance();"+'"]').click()
+    driver.find_element_by_xpath('//a[@href="'+"javascript:exitAttendance();"+'"]').click()
     driver.close()
     driver.quit()
     os.system('/bin/rm -fr imgs')

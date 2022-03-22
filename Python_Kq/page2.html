@@ -1,0 +1,264 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<title>TalentBase Attendance Online</title>
+<link href="/css/gd-style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/css/kq-style.css" type="text/css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<script src="/script/jquery-1.7.1.min.js"></script>
+<script src="/script/js-slider.js"></script>
+<script>
+	var path = "";
+	response.setHeader("Pragma","No-cache"); 
+	response.setHeader("Cache-Control","no-cache"); 
+	response.setDateHeader("Expires", 0);
+</script>
+<style type="text/css">
+
+    .msg_top{
+        background:#e5f6ff;
+        padding:0px 10px 15px 15px;
+        text-align:right;
+        height: 25px;
+        cursor:pointer;
+    }
+
+    #msg_cont{
+        padding:15px 20px 20px;
+        text-align:center;
+        font-size: 22px;
+        color:  	#808080;
+    }
+    #msg_clear{
+        display:inline-block;
+        color:#fff;
+        padding:1px 15px;
+        background:#2baae1;
+        border-radius:2px;
+        float:right;
+        margin-right:20px;
+        cursor:pointer;
+        font-size: 18px;
+    }
+
+
+	html, body {
+	      width:100%;
+	      height:100%;
+ 	 }
+  	.box {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(51,51,51,0.5);
+      z-index: 9999;
+	 }
+	 .container {
+	     position: absolute;
+	     background: #fff;
+	     width:520px;
+         top: 29%;
+         left:33%;
+         background:#fff;
+         box-shadow:5px 5px 8px #999;
+         font-size:17px;
+         color:#666;
+         border:1px solid #f8f8f8;
+         text-align: center; 
+         line-height: 2rem;
+         display:inline-block;
+         padding-bottom:20px;
+         border-radius:2px;
+         height: 200px;
+	 }
+</style>
+</head>
+
+<body>
+ <div class="box">
+     <div class="container">
+	     <div class="msg_top"><span class="msg_close" style="font-size: 30px;">×</span></div>
+		     <div id="msg_cont">
+		     	<table style="margin-top: 3%;margin-left: 10%" border="0" width="70%">
+		     		<tbody><tr>
+		     			<td rowspan="2"><img style="width: 80px" src="/css/PNG24/warnning.png"></td>
+		     			<td><div style="margin-left: 10%">节能低碳 从我做起</div></td>
+		     		</tr>
+		     		<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;下班请关机</td>
+					</tr> 
+		     	</tbody></table>
+		     </div>
+	      <div class="msg_close" id="msg_clear">确定</div>
+     </div>
+ </div>
+<center>
+<ul style="color: red;">
+	
+</ul>
+</center>
+<form action="/record.jsp" method="post" name="attendanceForm">
+<input type="hidden" name="currentempoid" value="9374096644">
+<input type="hidden" id="browser" name="browser" value="Chrome">
+<div class="wrap980">
+	<div class="ad-part">
+		<div class="service-slider" id="slider_flights">
+	    <ol style="margin-left: -60px;"><li class="active"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ol>
+	    <ul id="alul"><li style="z-index: 100;"><a href="http://web.neusoft.com/upload/files/20220321/1647824304592.pdf" target="_blank"><img src="/upload/advertisement_pic/11906778011_社联会徽征集-kq.jpg" width="980" height="239"></a></li><li style="z-index: 99;"><img src="/upload/advertisement_pic/11906213574_第一季度banner2_20220316203058.jpg" width="980" height="239"></li><li style="z-index: 98;"><a href="https://learning.neusoft.com/kng/view/package/76ddf1fb52aa4839805f660851ceafa8.html?m=1&amp;h=1&amp;view=1" target="_blank"><img src="/upload/advertisement_pic/11906156965_策略宣讲（盖总）-kq.jpg" width="980" height="239"></a></li><li style="z-index: 97;"><a href="http://web.neusoft.com/upload/files/20220315/1647318751307.pdf" target="_blank"><img src="/upload/advertisement_pic/11905535306_广告模板PPT.jpg" width="980" height="239"></a></li><li style="z-index: 96;"><img src="/upload/advertisement_pic/11905498612_价值观-kq.jpg" width="980" height="239"></li><li style="z-index: 95;"><img src="/upload/advertisement_pic/11905498603_使命-kq.jpg" width="980" height="239"></li><li style="z-index: 94;"><img src="/upload/advertisement_pic/11905498597_愿景-kq.jpg" width="980" height="239"></li><li style="z-index: 93;"><img src="/upload/advertisement_pic/11856495778_心理学社纳新-kq.jpg" width="980" height="239"></li></ul>
+	</div>
+</div>
+
+<div class="kq-part pt20" id="kq_part">
+<div class="left-time-part ml30 fl">
+<p class="font24 mt10">2022年03月22日</p>
+<p class="font24">星期二</p>
+<p class="font44 mt10"><span id="timeSpan">17:34:58</span></p>
+</div>
+<div class="right-kq-part ml30 fl">
+<table cellpadding="0" cellspacing="0" class="kq-message-table">
+	<thead>
+		<tr>
+			<th class="border-bg-none" width="100">员工编号<br>
+			Employee No.</th>
+			<th width="80">员工姓名<br>
+			Name</th>
+			<th width="234">部门名称<br>
+			Department</th>
+			<th width="130">打卡日期<br>
+			Attendance Date</th>
+			<th width="130">打卡时间<br>
+			Attendance Time</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td>201909258280</td>
+			<td>滕艳波</td>
+			<td><div class="text-ell">业务三部</div></td>
+			<td>2022-03-22</td>
+			<td>08:21:05</td>
+		</tr>
+	
+		<tr>
+			<td>201909258280</td>
+			<td>滕艳波</td>
+			<td><div class="text-ell">业务三部</div></td>
+			<td>2022-03-22</td>
+			<td>15:27:21</td>
+		</tr>
+	
+		<tr>
+			<td>201909258280</td>
+			<td>滕艳波</td>
+			<td><div class="text-ell">业务三部</div></td>
+			<td>2022-03-22</td>
+			<td>15:34:36</td>
+		</tr>
+	
+	</tbody>
+</table>
+<div class="kq-btn pt43 clear"><a href="javascript:document.attendanceForm.submit();" class="mr36"><span class="font24">打卡</span>&nbsp;&nbsp;<span class="font18">Sign&nbsp;in</span></a>
+<a href="javascript:exitAttendance();"><span class="font24">退出</span>&nbsp;&nbsp;<span class="font18">Exit</span></a></div>
+<div class="kq-tips mt20">
+<p>严禁一切不正当的在线打卡考勤行为，否则将严肃处理。</p>
+<p>All the false attendance action is forbidden otherwise will be punished in serious.</p>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	var agent=navigator.userAgent.toLowerCase();
+	
+	var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");
+		if(agent.indexOf('qqbrowser')>0){//判断是qq浏览器还是其它浏览器
+			document.getElementById('browser').value="QQ";
+     	}else if(agent.indexOf("se 2.x")>0){
+     		document.getElementById('browser').value="sogou";
+     	}else if(agent.indexOf('firefox')>0){
+     		document.getElementById('browser').value="firefox";
+        }else if(agent.indexOf('trident')>0){
+        	document.getElementById('browser').value="IE";
+        }else if (is360) { 
+        	document.getElementById('browser').value="360";
+        }else if(agent.indexOf('2345explorer')>0){
+        	document.getElementById('browser').value="2345";
+        }else if(agent.indexOf('maxthon')>0){
+        	document.getElementById('browser').value="Maxthon";
+        }else if(agent.indexOf('chrome')>0){
+        	document.getElementById('browser').value="Chrome";
+        }
+		function _mime(option, value) {
+	        var mimeTypes = navigator.mimeTypes;
+	        for (var mt in mimeTypes) {
+	            if (mimeTypes[mt][option] == value) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
+    
+ </script>
+</form>
+<script>
+	var sessionTime = 0;
+	var timeSpan = document.getElementById('timeSpan');
+    var dateStr = "17:34:57";
+    var hours = parseInt(dateStr.substring(0,2),10);
+    var minutes = parseInt(dateStr.substring(3,5),10);
+    var seconds = parseInt(dateStr.substring(6,8),10);
+    	
+    refreshTime();
+    	
+    function refreshTime(){
+    	seconds++;
+    	if(seconds == 60){
+    		seconds = 0;
+    		minutes++;
+    	}
+    	if(minutes == 60){
+    		minutes = 0;
+    		hours++;
+    	}
+    	var showHours = hours;
+    	var showMinutes = minutes;
+    	var showSeconds = seconds;
+    	if(hours<10) showHours = "0"+showHours;
+    	if(minutes<10) showMinutes = "0"+showMinutes;
+    	if(seconds<10) showSeconds = "0"+showSeconds;
+    	timeSpan.innerHTML = showHours + ":" + showMinutes + ":" + showSeconds;
+
+		sessionTime++;
+		if(sessionTime>540) { // session 10分钟  ，9分钟时就退出提示。
+			alert("会话时间超时，请重新登录系统！");
+			window.location = "/close.jsp";
+		}else{
+    		setTimeout("refreshTime();",1000);
+
+		}
+    }
+    
+    function exitAttendance(){
+    	document.attendanceForm.action = '/close.jsp';
+    	document.attendanceForm.submit();
+    }
+
+    
+    var alertWindow = "null";
+   	if(alertWindow != null && alertWindow == "12"){
+   	  	$(".box").show();
+   	    $(".msg_close").click(function(){
+   	    	$(".box").remove();
+   	    })
+   	}
+
+</script>
+
+</body></html>
